@@ -1,0 +1,234 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    background-color: #0C0C0C ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+.contant{
+    
+    background-color:white;
+    height: 300px;
+    width: 800px;
+    border-radius: 20px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    overflow: hidden;
+    box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.4);
+}
+
+.box{
+    opacity: 0;
+    background-color: transparent;
+    flex: 3;
+    width: 100%;  
+    overflow: hidden;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: column;
+    display: none;
+}
+.title{
+    overflow: hidden;
+    flex: 1; 
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-flow: row wrap;
+    padding: 20px;
+    font-family: 'Sofia', 'Poppins';
+}
+.title h1{
+    color: white;
+    font-size: 50px;
+    order: 1;
+}
+.title i{
+    font-size: 80px;
+    color: red;
+    order: 1;
+}
+.title input{
+    box-sizing: border-box;
+    padding-left: 30px;
+    order: 2;
+    flex-basis: 80%;
+    font-size: 50px;
+    height: 90px;
+    border-radius: 50px;
+    border: 3px solid #2A2A2A;
+    box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.4);
+}
+
+.title button{
+    transition: all 0.3 ease;
+    border: none;
+    order: 2;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+.title button svg{
+    width: 80%;
+    height: 60%;
+    color: #2A2A2A;
+}
+.title input::placeholder{
+    position: relative;
+    opacity: 0.7;
+    color: #2A2A2A;
+    font-size: 40px;
+    left: 30px;
+    font-family: 'Poppins';
+}
+.btn{
+    opacity: 0;
+    display: none;
+    flex: 1;
+    width: 100%;
+    overflow: hidden;
+}
+.img{
+    position: relative;
+    background-color: #2A2A2A;
+    width: 640px;
+    height: 360px;
+    border-radius: 20px;
+}
+.form{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+    height: 100px;
+    
+}
+.option{
+    appearance: none;
+    width: 150px;
+    height: 85px;
+    background-color: black;
+    color: white;     
+    font-size: 30px;
+    font-family: 'Poppins'; 
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #D4D4D4;
+    vertical-align: middle;
+    position: relative;
+    transition: all 0.3s ease;
+}
+.inp{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    
+    padding: 10px;
+     
+    margin-left: 10px; 
+}
+
+span{
+    font-family: 'Poppins';
+    font-size: 37px;
+    padding: 0;
+    margin: 0;
+    align-self: center;
+    justify-self: center;
+    box-sizing: border-box;
+    font-weight: 500;
+}
+.text{
+    position: relative;
+    justify-self: flex-start;
+    align-self: flex-start;
+    left: 20px;
+    font-family: 'Poppins';
+    font-size: 40px;
+    color: white;
+}
+.theimg{
+    width: 700px;
+    border-radius: 15px;
+    padding: 20px;
+    height: 445px;
+    background-color: #0B1215;
+    border: 3px solid #D4D4D4 ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    flex-flow: column;
+}
+input[type="radio"]{
+    display: none;
+}
+
+
+.btn{
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+#btn svg{
+    color: #D4D4D4;
+    width: 13%;
+    height: 80%;
+    animation: down 5s linear infinite ;
+}
+#btn{
+    position: relative;
+    bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0C0C0C;
+    flex-flow: row;
+    gap: 20px;
+    font-family: 'Poppins';
+    color: white;
+    outline: none;
+    border: none;
+    height: 125px;
+    border-radius: 62.5px;
+    width: 450px;
+}
+h1{
+    font-size: 40px;
+}
+@keyframes down{
+    50%{
+        transform: translateY(-7px);
+    }
+}
+@keyframes youtube{
+    50%{
+        transform: translateX(-7px);
+    }
+}
+.youtube{
+    animation: youtube 5s linear infinite;
+}
+
